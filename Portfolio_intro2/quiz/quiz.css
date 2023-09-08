@@ -1,0 +1,169 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#logo{
+	width: 190px;
+}
+
+
+
+.background-image {
+
+	background-image: url('genshin3.jpg');
+	height: 100%;
+	margin-top: -1px;
+	margin-bottom: 13px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body
+{
+	width: 100%;
+	height: 100vh;
+}
+
+body,
+#container,
+header,
+main
+{
+	width: 100%;
+}
+
+#container
+{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: -800px;
+	background-color: rgba(198, 211, 238, 0.479);
+	max-width: 600px;
+	height: 450px;
+	padding: 10px;
+	
+	border: 1px solid rgb(8, 6, 6);
+	
+	text-align: center;
+}
+
+header
+{
+	position: relative;
+	
+	min-height: 0px;
+	
+	margin-bottom: 10px;
+	
+	border: 1px solid rgb(0, 0, 0);
+}
+
+main
+{
+	position: relative;
+	height: 268px;
+
+	padding: 10px;
+	
+	border: 1px solid rgb(51, 51, 51);
+}
+
+#p-msg{
+	margin-top: 15px;
+	
+}
+
+#container-question
+{
+	margin-top: 0px;
+}
+
+#btn-play
+{
+	appearance: none;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	width: 150px;
+	height: 50px;
+	
+	background-color: rgb(98, 124, 240);
+	border: none;
+	
+	font-size: 24px;
+	color: #fff;
+	
+	cursor: pointer;
+	transition: .2s ease-in;
+}
+
+#btn-play:hover
+{
+	background-color: rgb(47, 0, 255);
+}
+
+#question{
+	margin-bottom: 20px;
+}
+
+input[type="radio"]{
+	display: none;
+}
+
+label{
+	margin-top: 7px;
+	padding: 5px;
+	
+	border: 1px solid #333;
+	
+	display: block;
+	cursor: pointer;
+}
+
+label:hover{
+	background-color: rgba(0, 0, 0, .2);
+}
+
+input[type="radio"]:checked + label
+{
+	background-color: #486e8d;
+	
+	color: #fff;
+	font-weight: 600;
+}
+
+#btn-confirm,
+#next-question
+{
+	appearance: none;
+	
+	width: 100%;
+	margin-top: 10px;
+	padding: 5px;
+	
+	background-color: #333;
+	border: none;
+	
+	color: #fff;
+	font-size: 20px;
+	
+	cursor: pointer;
+}
+
+#btn-confirm:disabled{
+	background-color: #ccc;
+	pointer-events: none;
+}
+
+#btn-confirm:hover,
+#next-question:hover
+{
+	background-color: #111;
+}
